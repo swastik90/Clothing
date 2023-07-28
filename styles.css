@@ -1,0 +1,264 @@
+/* Reset some default styles to avoid unexpected behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000000;
+    color: #F1F6F9;
+    padding: 10px 9px;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 20px;
+    width: 100px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #F1F6F9;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    /* Hide the menu icon by default */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #F1F6F9;
+    margin: 6px 0;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-list li a {
+    color: #F1F6F9;
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    height: 700px;
+    background-image: url("images/hero-bg.jpg");
+    background-size: cover;
+    background-position: left;
+    text-align: left;
+    padding: 150px 30px;
+    color: #F1F6F9;
+}
+
+.recolor {
+    color: #ffdd00;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #141416;
+    color: #ffdd00;
+    padding: 12px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.featured-products {
+    padding: 80px 0;
+    height: 700px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 30%;
+    margin: 0 1%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000000;
+    color: #F1F6F9;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header{
+        height: 70px;
+    }
+    header h1 {
+        margin-right: 0;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .menu_sec {
+        position: relative;
+        float: right;
+
+    }
+
+    .menu_sec h1 {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show the menu icon on smaller screens */
+    }
+
+    .menu-list {
+        display: none;
+        /* Hide the menu items by default */
+    }
+
+    .menu-list.show {
+        display: block;
+        /* Show the menu items when the menu icon is clicked */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+
+    .menu-list li {
+        display: block;
+        float: right;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .featured-products {
+        padding: 40px 0;
+        height: auto;
+
+    }
+
+    .featured-products h2 {
+        font-size: 30px;
+    }
+
+    .product-card {
+        width: 70%;
+        height: auto;
+        margin: 5px 5px;
+    }
+    .product-card h3{
+        font-size: 18px;
+    }
+    .product-card p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}

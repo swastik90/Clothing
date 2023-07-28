@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Brand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="" class="logo">
+        <div class="container">
+            <div class="menu_sec">
+                <h1>Happy Clothing</h1>
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>"Style Reimagined: <span class="recolor">Where Fashion Meets You"</span></h2>
+            <p>Giving style to Ranpurias.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="images/shoe1.jpg" alt="Shoe 1">
+                <h3>NB X1Z53</h3>
+                <p>Price: 1299 rs</p>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe2.jpg" alt="Shoe 2">
+                <h3>Retro High</h3>
+                <p>Price: 1479 rs</p>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe3.jpg" alt="Shoe 3">
+                <h3>Z13 Trainer</h3>
+                <p>Price: 1119 rs</p>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+    </section>
+
+    <!-- Add more sections (e.g., About, Testimonials, etc.) if needed -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Happy Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menuList = document.querySelector('.menu-list');
+            menuList.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
